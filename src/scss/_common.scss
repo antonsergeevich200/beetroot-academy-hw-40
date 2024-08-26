@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  &,
+  &::after,
+  &::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  @media screen and (max-width: 768px) {
+    max-width: 700px;
+    padding: 0 10px;
+  }
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
